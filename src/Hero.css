@@ -1,0 +1,8 @@
+.profilePhoto{
+    max-height: 320px;
+}
+.profileImgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

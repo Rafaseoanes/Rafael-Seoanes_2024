@@ -1,10 +1,6 @@
-import { useState } from "react";
-import profileImg from "./assets/profileImg.png";
-import "./App.css";
+import "./About.css";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+function About() {
   return (
     <>
       <div className="about">
@@ -28,9 +24,8 @@ function App() {
           dedicated to delivering a cohesive and impactful digital experience.
         </h4>
       </div>
-      <img src={profileImg} className="profilePhoto" alt="Profile photo" />
     </>
   );
 }
 
-export default App;
+export default About;
