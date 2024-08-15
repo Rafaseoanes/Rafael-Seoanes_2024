@@ -1,8 +1,70 @@
-.profilePhoto{
-    max-height: 320px;
+/* color palette: https://colorhunt.co/palette/f4f4f465eeb7ff5722474744 */
+
+.name {
+  font-size: clamp(4.5em, 8vw + 1rem, 20rem);
+  /* z-index: 1; */
+  text-align: center;
+  transition: all 1s;
+  transform: translateX(0) scale(1);
+  margin: 0;
+  position: relative;
 }
-.profileImgContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.title {
+  font-size: clamp(3em, 5vw + 1rem, 5rem);
+  /* z-index: 1; */
+  text-align: center;
+  transition: all 1s;
+  transform: translateX(0) scale(1);
+  margin: 0;
+}
+
+.nameStart {
+  font-size: clamp(4.5em, 8vw + 1rem, 20rem);
+  transform: translateX(-400px) scale(1.5);
+}
+.titleStart {
+  font-size: clamp(4em, 8vw + 1rem, 20rem);
+  transform: translateX(600px) scale(1.5);
+}
+.profilePhoto {
+  max-height: 320px;
+  z-index: 1;
+}
+.signImg {
+  max-width: 500px;
+  transform: translateY(-100px);
+}
+
+.profileImgContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.circle {
+  height: 240px;
+  width: 240px;
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  border-radius: 50%;
+  -webkit-filter: blur(60px);
+  -moz-filter: blur(60px);
+  -o-filter: blur(60px);
+  -ms-filter: blur(60px);
+  filter: blur(190px);
+}
+.orangeCircle {
+  background-color: #ff5722;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-10%, -70%);
+  z-index: 0;
+}
+.mintCircle {
+  background-color: #65eeb7;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-90%, -20%);
+  z-index: 0;
 }
