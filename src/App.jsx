@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import profileImg from "./assets/profileImg.png";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="about">
+        <h3>About</h3>
+        <h4>
+          I am a frontend developer with a deep passion for visual arts and
+          photography, specializing in creating visually compelling and
+          user-friendly web applications. Currently, I am halfway through my
+          bachelor's degree in computer science and software engineering, which,
+          combined with my hands-on experience, allows me to blend technical
+          expertise with creative vision. I have completed a full-stack web
+          development bootcamp, but my true interest lies in frontend
+          development, where I can fully engage my visual creativity.
+          <br />
+          <br />I approach each project with a focus on aesthetic design, user
+          experience, and seamless interaction, ensuring that every detail
+          aligns with the overall vision. My self-taught journey in software
+          development has equipped me with a diverse skill set, allowing me to
+          adapt to new technologies and continuously refine my craft. Whether
+          it's crafting a pixel-perfect interface or optimizing user flows, I am
+          dedicated to delivering a cohesive and impactful digital experience.
+        </h4>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <img src={profileImg} className="profilePhoto" alt="Profile photo" />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
