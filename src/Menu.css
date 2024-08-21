@@ -1,0 +1,14 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    /* border: red 1px solid; */
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul li{
+    list-style: none;
+    margin-left: 20px;
+}
