@@ -1,5 +1,14 @@
-
-.workSection{
-    height: 100vh;
-    background-color: rgb(87, 87, 87);
+.workSection {
+  height: 100vh;
+  /* background-color: rgb(87, 87, 87); */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 24px;
+  padding: 15px;
 }
+.projectsTitle{
+    font-size: 7em;
+    margin: 0;
+}
+
