@@ -6,32 +6,25 @@
   grid-template-rows: repeat(1, 1fr);
   gap: 24px;
   padding: 15px;
+  justify-items: center;
 }
 .projectsTitle {
   font-size: 7em;
+  font-size: clamp(3em, 5vw + 1rem, 7rem);
   margin: 0;
 }
-
-.leftColumn .project {
-  /* Styles for Project components inside leftColumn */
-  /* background-color: lightblue; */
-  animation: fade-in linear;
+.leftColumn {
+  transform: scale(0.8) translateY(100px);
+  opacity: 0.4;
+  transition: all 1s;
 }
-
-.rightColumn .project {
-  /* Styles for Project components inside rightColumn */
-  /* background-color: lightgreen; */
-  animation: fade-in linear;
-  animation-timeline: view();
+.rightColumn {
+  transform: scale(0.8) translateY(100px);
+  opacity: 0.4;
+  transition: all 1s;
 }
-
-@keyframes fade-in {
-  from {
-    scale: 0.8;
-    opacity: 0;
-  }
-  to {
-    scale: 1;
-    opacity: 1;
-  }
+.animate {
+  transform: scale(1) translateY(0px);
+  opacity: 1;
+  transition: all 1s;
 }
