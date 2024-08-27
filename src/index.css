@@ -58,6 +58,39 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.content{
+  position: relative;
+  z-index: 1;
+}
+
+.circle {
+  height: 240px;
+  width: 240px;
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  border-radius: 50%;
+  -webkit-filter: blur(60px);
+  -moz-filter: blur(60px);
+  -o-filter: blur(60px);
+  -ms-filter: blur(60px);
+  filter: blur(190px);
+}
+.orangeCircle {
+  background-color: #ff5722;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-10%, -70%);
+  z-index: 0;
+}
+.mintCircle {
+  background-color: #65eeb7;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-90%, -20%);
+  z-index: 0;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

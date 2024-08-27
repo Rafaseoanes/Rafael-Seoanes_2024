@@ -1,5 +1,5 @@
 .workSection {
-  height: 100vh;
+  /* height: 100vh; */
   /* background-color: rgb(87, 87, 87); */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -7,8 +7,31 @@
   gap: 24px;
   padding: 15px;
 }
-.projectsTitle{
-    font-size: 7em;
-    margin: 0;
+.projectsTitle {
+  font-size: 7em;
+  margin: 0;
 }
 
+.leftColumn .project {
+  /* Styles for Project components inside leftColumn */
+  /* background-color: lightblue; */
+  animation: fade-in linear;
+}
+
+.rightColumn .project {
+  /* Styles for Project components inside rightColumn */
+  /* background-color: lightgreen; */
+  animation: fade-in linear;
+  animation-timeline: view();
+}
+
+@keyframes fade-in {
+  from {
+    scale: 0.8;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}

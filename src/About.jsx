@@ -2,7 +2,7 @@ import "./About.css";
 
 function About() {
   return (
-    <>
+    
       <div className="about">
         <h3>About</h3>
         <h4>
@@ -24,7 +24,7 @@ function About() {
           dedicated to delivering a cohesive and impactful digital experience.
         </h4>
       </div>
-    </>
+    
   );
 }
 

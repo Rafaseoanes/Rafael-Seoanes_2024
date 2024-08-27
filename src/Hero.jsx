@@ -23,13 +23,12 @@ function Hero() {
   return (
     <>
       <div className="profileImgContainer">
-        <div className="circle orangeCircle"></div>
-        <div className="circle mintCircle"></div>
+        
         <h1 className={loadAnimationName}>Rafael Seoanes</h1>
         {/* <img src={profileImg} className="profilePhoto" alt="Profile photo" /> */}
         <h2 className={loadAnimationTitle}>Frontend Developer</h2>
         {/* <img src={sign} className="signImg" alt="Name" /> */}
-        <img src={arrow} className={hideArrow} alt="arrow" />
+        {/* <img src={arrow} className={hideArrow} alt="arrow" /> */}
       </div>
     </>
   );

@@ -12,6 +12,7 @@
   margin: 5px;
   font-size: clamp(4.5em, 8vw + 1rem, 20rem);
   transform: translateX(-100%);
+  
 }
 
 .title {
@@ -30,15 +31,15 @@
 
 .hideArrow {
   opacity: 0;
-  position: absolute;
-  bottom: 40px;
+  position: relative;
+  bottom: -80px;
 }
 .arrow {
   opacity: 0.5;
   width: 20px;
   height: 100px;
-  position: absolute;
-  bottom: 40px;
+  position: relative;
+  bottom: -80px;
   transition: all 2.5s;
 }
 
@@ -57,31 +58,4 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.circle {
-  height: 240px;
-  width: 240px;
-  /* background-color: rgba(255, 255, 255, 0.3); */
-  border-radius: 50%;
-  -webkit-filter: blur(60px);
-  -moz-filter: blur(60px);
-  -o-filter: blur(60px);
-  -ms-filter: blur(60px);
-  filter: blur(190px);
-}
-.orangeCircle {
-  background-color: #ff5722;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-10%, -70%);
-  z-index: 0;
-}
-.mintCircle {
-  background-color: #65eeb7;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-90%, -20%);
-  z-index: 0;
 }
