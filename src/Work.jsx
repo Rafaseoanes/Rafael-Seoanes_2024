@@ -19,6 +19,16 @@ function Work() {
         <Project />
         <Project />
         <Project />
+        <h4 className="githubLink">
+          {" "}
+          <a
+            href="https://github.com/Rafaseoanes"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CHECK MORE PROJECTS 👈🏾
+          </a>
+        </h4>
       </div>
     </div>
   );

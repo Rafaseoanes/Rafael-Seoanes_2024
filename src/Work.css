@@ -31,3 +31,10 @@
   opacity: 1;
   transition: all 1s;
 }
+.githubLink{
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: white;
+  margin-top: 50px; 
+  /* border: 1px red solid; */
+}

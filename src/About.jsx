@@ -4,8 +4,9 @@ function About() {
   return (
     
       <div className="about">
-        <h3>About</h3>
-        <h4>
+        <h3>Let's work together</h3>
+
+        {/* <h4>
           I am a frontend developer with a deep passion for visual arts and
           photography, specializing in creating visually compelling and
           user-friendly web applications. Currently, I am halfway through my
@@ -22,7 +23,7 @@ function About() {
           adapt to new technologies and continuously refine my craft. Whether
           it's crafting a pixel-perfect interface or optimizing user flows, I am
           dedicated to delivering a cohesive and impactful digital experience.
-        </h4>
+        </h4> */}
       </div>
     
   );
