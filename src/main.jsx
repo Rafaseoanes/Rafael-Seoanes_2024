@@ -16,7 +16,7 @@ createRoot(document.getElementById("root")).render(
       <Menu />
       <Hero />
       <Work />
-      <About />
+      {/* <About /> */}
     </div>
   </StrictMode>
 );

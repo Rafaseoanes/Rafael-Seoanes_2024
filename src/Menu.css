@@ -1,6 +1,7 @@
 .menu{
     display: flex;
     justify-content: space-between;
+    /* padding: 0 8em */
     /* border: red 1px solid; */
 }
 .menu ul{

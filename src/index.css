@@ -1,3 +1,7 @@
+/* *{
+  border: 1px red solid;
+} */
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -13,6 +17,8 @@
   -moz-osx-font-smoothing: grayscale;
 
   overflow-x: hidden;
+
+ 
 }
 
 a {
@@ -78,7 +84,7 @@ button:focus-visible {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-10%, -70%);
+  transform: translate(90%, -70%);
   z-index: 0;
 }
 .mintCircle {
@@ -86,7 +92,7 @@ button:focus-visible {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-90%, -20%);
+  transform: translate(0%, 18%);
   z-index: 0;
 }
 
