@@ -66,6 +66,7 @@ button:focus-visible {
 .content {
   position: relative;
   z-index: 1;
+  /* border: 1px red solid;  */
 }
 
 .circle {

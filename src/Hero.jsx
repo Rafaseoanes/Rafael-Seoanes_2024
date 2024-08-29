@@ -9,7 +9,7 @@ function Hero() {
           <span> I'm Rafael Seoanes -</span>
         </h3>
         <h3>
-          <span> frontend developer with a background in photography</span>
+          <span>Frontend developer with a background in photography</span>
         </h3>
         <br />
         <br />
