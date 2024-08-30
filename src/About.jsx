@@ -1,6 +1,30 @@
 import "./About.css";
+import Marquee from "react-fast-marquee";
 
 function About() {
+  const imageLinks = [
+    "https://iili.io/dwy7kuV.jpg",
+    "https://iili.io/dwy7OyQ.jpg",
+    "https://iili.io/dwy7N8x.jpg",
+    "https://iili.io/dwy7vwB.jpg",
+    "https://iili.io/dwy7Un1.jpg",
+    "https://iili.io/dwy7gMF.jpg",
+    "https://iili.io/dwy7r6g.jpg",
+    "https://iili.io/dwy76Fa.jpg",
+    "https://iili.io/dwy7PcJ.jpg",
+    "https://iili.io/dwy7L9R.jpg",
+    "https://iili.io/dwy7i8v.jpg",
+    "https://iili.io/dwy7Qup.jpg",
+    "https://iili.io/dwy7ttI.jpg",
+    "https://iili.io/dwy7bnt.jpg",
+    "https://iili.io/dwy7mMX.jpg",
+    "https://iili.io/dwy7pPn.jpg",
+    "https://iili.io/dwyYJSf.jpg",
+    "https://iili.io/dwyYHcG.jpg",
+    "https://iili.io/dwyY3Al.jpg",
+    "https://iili.io/dwyY294.jpg",
+  ];
+
   return (
     <div className="about">
       <h3 className="aboutTitle">More about me:</h3>
@@ -21,30 +45,22 @@ function About() {
         <b>Photography:</b>
       </h4>
       <div className="photographyGallery">
-        <ul className="scrollerGallery">
-        
-  <li><img className="photographyImg" src="https://i.ibb.co/WDLwftK/1-10.jpg" alt="1-10"/></li>
-  <li><img className="photographyImg" src="https://i.ibb.co/QX0TrR3/DSCF3565-copy.jpg" alt="DSCF3565-copy"/></li>
-  <li><img className="photographyImg" src="https://i.ibb.co/tYfFTnx/481-A9935-copia-copy-web.jpg" alt="481-A9935-copia-copy-web"/></li>
-  <li><img className="photographyImg" src="https://i.ibb.co/L9YzcNv/DSCF5755.jpg" alt="DSCF5755"/></li>
-  <li><img className="photographyImg" src="https://i.ibb.co/bLTvLtC/DSCF4115.jpg" alt="DSCF4115"/></li>
-  <li><img className="photographyImg" src="https://i.ibb.co/Snp4M2t/IMG-0290.jpg" alt="IMG-0290"/></li>
-  <li><img className="photographyImg" src="https://i.ibb.co/Q9Y7kLn/DSCF5769-copy.jpg" alt="DSCF5769-copy"/></li>
-  <li><img className="photographyImg" src="https://i.ibb.co/9swhbhn/DSCF6007.jpg" alt="DSCF6007"/></li>
-  <li><img className="photographyImg" src="https://i.ibb.co/9n5y4NM/81-A4093-2.jpg" alt="81-A4093-2"/></li>
-  <li><img className="photographyImg" src="https://i.ibb.co/fCgDHFf/DSCF7104.jpg" alt="DSCF7104"/></li>
-  <li><img className="photographyImg" src="https://i.ibb.co/hYyqb65/MG-8837.jpg" alt="MG-8837"/></li>
-  <li><img className="photographyImg" src="https://i.ibb.co/FDz303b/DSCF7323.jpg" alt="DSCF7323"/></li>
-  <li><img className="photographyImg" src="https://i.ibb.co/vPQFtyn/DSCF8127.jpg" alt="DSCF8127"/></li>
-  <li><img className="photographyImg" src="https://i.ibb.co/fQ9Gs4f/3-9.jpg" alt="3-9"/></li>
-  <li><img className="photographyImg" src="https://i.ibb.co/9bywfHC/DSCF8455.jpg" alt="DSCF8455"/></li>
-  <li><img className="photographyImg" src="https://i.ibb.co/c2wKGm4/IMG-0920.jpg" alt="IMG-0920"/></li>
-  <li><img className="photographyImg" src="https://i.ibb.co/ydyg7dV/IMG-2151.jpg" alt="IMG-2151"/></li>
-  <li><img className="photographyImg" src="https://i.ibb.co/Wvj3Lyh/DSCF6731.jpg" alt="DSCF6731"/></li>
-  <li><img className="photographyImg" src="https://i.ibb.co/bJdcth3/IMG-2163.jpg" alt="IMG-2163"/></li>
-  <li><img className="photographyImg" src="https://i.ibb.co/BCTJBMy/DSCF5725.jpg" alt="DSCF5725"/></li>
-</ul>
-
+        <Marquee
+          gradientWidth={50}
+          gradientColor="black"
+          gradient
+          pauseOnHover
+          className="scrollerGallery"
+        >
+          {imageLinks.map((src, index) => (
+            <img
+              key={index}
+              className="photographyImg"
+              src={src}
+              alt={`img-${index}`}
+            />
+          ))}
+        </Marquee>
       </div>
       <h4>
         <b>My Skills:</b>
@@ -60,17 +76,6 @@ function About() {
         <li>VITE</li>
         <li>PHOTOSHOP</li>
         <li>FIGMA</li>
-      </ul>
-
-      <h4>
-        <b>Links:</b>
-      </h4>
-      <ul>
-        <li>Instagram</li>
-        <li>Linkedin</li>
-        <li>Mail</li>
-        <li>Github</li>
-        <li>Twitter</li>
       </ul>
     </div>
   );

@@ -11,6 +11,7 @@
 
 .profileImgContainer {
   height: 100vh;
+  max-width: 860px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,7 +22,7 @@
 .profileImgContainer h3 {
   margin: 0;
   font-weight: 500;
-  font-size: clamp(1.5em, 5vw + 1rem, 4.5rem);
+  font-size: clamp(1rem, 5vw + 1rem, 4.5rem);
   line-height: 115%;
   /* border: 1px red solid; */
   max-width: 1100px;

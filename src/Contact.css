@@ -1,0 +1,21 @@
+.contactSection{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ .mail h3{
+ /* border: 1px solid red; */
+ margin: 0;
+ font-size: clamp(1rem, 5vw + 1rem, 4.5rem);
+ line-height: 100%;
+ }
+.socialsLinks{
+  display: flex;
+  /* border: 1px red solid; */
+  list-style-type: none;
+  padding-left: 0;
+}
+.socialsLinks li {
+  margin-right: 50px;
+}

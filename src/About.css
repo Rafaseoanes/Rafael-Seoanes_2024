@@ -24,21 +24,7 @@
 
 .photographyImg {
   height: 300px;
+  margin-right: 10px;
+  /* color: rgba(0, 0, 0, 0.5); */
 }
 
-.photographyGallery {
-  /* max-width: 800px; */
-  /* border: 1px red solid; */
-  overflow: hidden;
-}
-.scrollerGallery {
-  display: flex;
-  gap: 1rem;
-  animation: scroll 40s linear infinite;
-}
-
-@keyframes scroll {
-  to {
-    transform: translate(-100%);
-  }
-}
