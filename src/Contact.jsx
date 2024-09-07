@@ -20,7 +20,7 @@ function Contact() {
           </a>
         </li>
         <li>
-          <a href="www.linkedin.com/in/rafael-seoanes" target="blank">
+          <a href="https://linkedin.com/in/rafael-seoanes" target="blank">
             Linkedin
           </a>
         </li>
