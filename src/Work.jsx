@@ -33,6 +33,16 @@ function Work() {
       </div>
       <div className={inView ? "rightColumn  animate" : "rightColumn"}>
         <Project
+          img={"https://i.imgur.com/rLvzBjC.jpeg"}
+          title={"Tv Search App"}
+          description={
+            "Tv search app created using ReactJS. Consumption of the tvmaze API."
+          }
+          githubLink={"https://github.com/Rafaseoanes/Tv-shows-search"}
+          liveLink={"https://rafaseoanes.github.io/Odin_Rock-Paper-Scissors/"}
+        />
+
+        <Project
           img={"https://i.imgur.com/GP5l5Ft.png"}
           title={"Weather App"}
           description={
@@ -40,16 +50,6 @@ function Work() {
           }
           githubLink={"https://github.com/Rafaseoanes/Odin_Weather-App/"}
           liveLink={"https://rafaseoanes.github.io/Odin_Weather-App/"}
-        />
-
-        <Project
-          img={"https://i.imgur.com/pW6PGHo.png"}
-          title={"Rock Paper Scissors"}
-          description={
-            "Basic game created with vanilla Javascript, HTML and CSS"
-          }
-          githubLink={"https://github.com/Rafaseoanes/Odin_Rock-Paper-Scissors"}
-          liveLink={"https://rafaseoanes.github.io/Odin_Rock-Paper-Scissors/"}
         />
 
         <h4 className="githubLink">
