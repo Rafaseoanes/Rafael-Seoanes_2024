@@ -6,10 +6,10 @@ function Menu() {
     <div className="menu">
       <h4 className="menuName">Rafael Seoanes</h4>
       <ul>
-        <li>Home</li>
-        <li>Projects</li>
-        <li>About</li>
-        <li>Contact</li>
+        {/* <li>Home</li> */}
+        <li><a href="#projectsSection">Projects</a></li>
+        <li><a href="#aboutSection">About</a></li>
+        <li><a href="#contactSection">Contact</a></li>
       </ul>
     </div>
   );

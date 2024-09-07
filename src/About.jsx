@@ -26,7 +26,7 @@ function About() {
   ];
 
   return (
-    <div className="about">
+    <div className="about" id="aboutSection">
       <h3 className="aboutTitle">More about me:</h3>
       <h4>
         <b>Frontend Developer | Photographer | Visual Arts Enthusiast | </b>
@@ -74,6 +74,7 @@ function About() {
         <li>GITHUB</li>
         <li>WEBPACK</li>
         <li>VITE</li>
+        <li>TAILWIND</li>
         <li>PHOTOSHOP</li>
         <li>FIGMA</li>
       </ul>
