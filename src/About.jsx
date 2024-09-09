@@ -47,8 +47,8 @@ function About() {
       <div className="photographyGallery">
         <Marquee
           gradientWidth={50}
-          gradientColor="black"
-          gradient
+          // gradientColor="black"
+          // gradient
           pauseOnHover
           className="scrollerGallery"
         >
