@@ -5,6 +5,7 @@ import About from "./About.jsx";
 import Hero from "./hero.jsx";
 import Menu from "./Menu.jsx";
 import Work from "./Work.jsx";
+import Contact from "./Contact.jsx";
 
 import "./index.css";
 
@@ -17,6 +18,7 @@ createRoot(document.getElementById("root")).render(
       <Hero />
       <Work />
       <About />
+      <Contact />
     </div>
   </StrictMode>
 );

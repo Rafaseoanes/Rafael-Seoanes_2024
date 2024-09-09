@@ -1,3 +1,7 @@
+/* *{
+  border: 1px red solid;
+} */
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -16,12 +20,30 @@
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  position: relative;
+  color: #65eeb7;
+  text-decoration: none;
 }
+
 a:hover {
-  color: #535bf2;
+  color: #65eeb7;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  bottom: -3px;
+  left: 0;
+  background-color: #65eeb7;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+a:hover::before {
+  transform: scaleX(1);
 }
 
 body {
@@ -60,6 +82,7 @@ button:focus-visible {
 .content {
   position: relative;
   z-index: 1;
+  /* border: 1px red solid;  */
 }
 
 .circle {
@@ -78,7 +101,7 @@ button:focus-visible {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-10%, -70%);
+  transform: translate(90%, -70%);
   z-index: 0;
 }
 .mintCircle {
@@ -86,8 +109,12 @@ button:focus-visible {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-90%, -20%);
+  transform: translate(0%, 18%);
   z-index: 0;
+}
+.githubLink a {
+  color: white;
+  font-weight: 700;
 }
 
 @media (prefers-color-scheme: light) {
@@ -95,8 +122,25 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+  a {
+    color: #213547;
+  }
+
   a:hover {
-    color: #747bff;
+    color: #204464;
+  }
+  .githubLink a {
+    color: #213547;
+    font-weight: 700;
+  }
+  .project {
+    border: 1px rgb(203, 203, 203) solid;
+    border-radius: 5px;
+    padding: 15px;
+    width: clamp(12em, 30vw + 1em, 35em);
+    margin: 24px 0px;
+    background-color: rgba(255, 255, 255, 0.813);
+    
   }
   button {
     background-color: #f9f9f9;

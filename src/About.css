@@ -1,9 +1,30 @@
-.about{
-   /* height: 100vh; */
-    max-width: 800px;
-    padding: 5px 25px;
-    /* background-color: rgb(83, 83, 83); */
+.about {
+  min-width: 100%;
+  /* border: 1px red solid;  */
 }
-.about h4{
-    font-weight: 200;
+
+.aboutTitle {
+  font-size: clamp(3em, 5vw + 1rem, 5rem);
 }
+
+.about ul {
+  display: flex;
+  /* border: 1px red solid; */
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skillsList li {
+  margin: 5px 10px 5px 0px;
+  background-color: rgba(255, 255, 255, 0.241);
+  padding: 2px 10px;
+  border-radius: 3px;
+  border: 1px rgb(82, 82, 82) solid;
+}
+
+.photographyImg {
+  height: 300px;
+  margin-right: 10px;
+  /* color: rgba(0, 0, 0, 0.5); */
+}
+

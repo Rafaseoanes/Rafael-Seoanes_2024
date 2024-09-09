@@ -8,7 +8,8 @@
   
 }
 .project img {
-  height: clamp(8em, 20vw + 1em, 28em);
+  /* height: clamp(8em, 20vw + 1em, 28em); */
+  width: 100%;
 }
 .project h5 {
   display: inline;

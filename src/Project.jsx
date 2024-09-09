@@ -1,26 +1,22 @@
 import React from "react";
 import "./Project.css";
 
-function Project() {
+function Project({ img, title, description, githubLink, liveLink }) {
   return (
     <div className="project">
-      <img
-        className="projectImg"
-        src="https://cdn.dribbble.com/userupload/16161034/file/original-c116fc45335f98838eb21cf1e5fec598.jpg"
-        alt=""
-      />
-      <h3 className="projectTitle">Elegant</h3>
-      <h4 className="projectDescription">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure aliquid
-        tempore asperiores vel perspiciatis a odio inventore facilis totam enim
-        earum{" "}
-      </h4>
+      <img className="projectImg" src={img} alt="" />
+      <h3 className="projectTitle">{title}</h3>
+      <h4 className="projectDescription">{description}</h4>
 
       <h5>
-        <a href="">Code</a>
+        <a href={githubLink} target="blank">
+          Code
+        </a>
       </h5>
       <h5>
-        <a href="">Live</a>
+        <a href={liveLink} target="blank">
+          Live
+        </a>
       </h5>
     </div>
   );
